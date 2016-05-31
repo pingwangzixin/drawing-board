@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>手写板/画板</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    
+  </head>
+  <body>
+    <p>选择画笔颜色:<input type="text" class="colorpicker"></p>
+    <p>选择画笔大小:<input type="range" class="size" min="1" max="50" onchange="setsize(this)"></p>
+    <p><button class="clear">擦掉重写</button></p>
+    <canvas id="mycanvas" style="display:block;cursor:pointer"></canvas>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/jquery.colorpicker.js"></script>
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

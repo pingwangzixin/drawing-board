@@ -1,0 +1,34 @@
+button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #00B16A;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.15s ease-in;
+  font-size:18px;
+}
+
+button:before {
+  content: "";
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  left: -25px;
+  background: #fff;
+  top: -10px;
+  opacity: .3;
+  transform: skewX(-25deg);
+  transition: all 0.25s ease-out;
+}
+
+button:hover {
+  background: #26C281;
+}
+
+button:hover:before {
+  width: 45px;
+  left: 150px;
+}
